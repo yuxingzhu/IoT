@@ -1,0 +1,292 @@
+#app{
+
+  // background-image: url("../../src/assets/bg_container.png");
+
+  [class*="default"]{
+    background-color: $greenBg;
+    color: #ffffff;
+  }
+
+  [class*="primary"]{
+    background-color: $darkGreen;
+  }
+
+  .navbar{
+    // background-color: #304156;
+    background: $navbarBg;
+  }
+
+  .sidebar-logo-container{
+    background-color: $greenBg;
+  }
+
+  .el-tabs__active-bar{
+    background-color: $greenBg;
+  }
+
+  .el-tabs__item.is-active,.el-tabs__item:hover{
+    color: $greenBg;
+  }
+
+  .hamburger-container{
+    svg{
+      background-color: $hamburger-container;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .app-breadcrumb{
+    font-size: 12px;
+    margin-left: 0;
+    &.el-breadcrumb .no-redirect {
+      color: #F8F8F9 !important;
+    }
+    .el-breadcrumb__inner a, .el-breadcrumb__inner.is-link{
+      color: $greenBg;
+    }
+  }
+
+  .el-button{
+    border-radius: 0px;
+    border: none;
+  }
+
+  .el-input__inner{
+    border-radius: 0px;
+  }
+
+  .el-checkbox.el-transfer-panel__item{
+    width: 100%;
+    &:hover{
+      color: $greenBg;
+    }
+    .el-checkbox__inner{
+      &:hover{
+        border-color: $greenBg;
+      }
+    }
+    .el-checkbox__label{
+      &:hover{
+        color: $greenBg;
+      }
+    }
+  }
+
+  .el-button--small{
+    border-radius: 0px;
+    padding: 9px 11px;
+  }
+
+  .multi-line > .el-dialog {
+    width: 60%;
+    margin-top: 5vh !important;
+    .el-dialog__body {
+      padding-top: 0;
+    }
+  }
+
+  .el-dialog__headerbtn .el-dialog__close.el-icon.el-icon-close{
+    color:  #ffffff !important;
+  }
+
+  .el-dialog {
+    width: 30%;
+    .el-dialog__header {
+      background-color: $greenBg;
+      border-bottom: 1px solid #e8eaec;
+      padding: 14px 16px;
+      line-height: 1;
+      & > .el-dialog__title {
+        font-size: $dialog-font-size;
+        letter-spacing: 1px;
+        display: inline-block;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: $title-font-weight;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      & > button {
+        height: 20px;
+        line-height: 20px;
+        margin-top: -5px;
+      }
+    }
+
+    .el-dialog__body {
+      .el-form {
+        .el-form-item.el-form-item--mini {
+          * {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .el-dialog__footer{
+      border-top: 1px solid #e8eaec;
+      padding: 12px 18px 12px 18px;
+      text-align: right;
+    }
+  }
+
+  .el-checkbox-group.el-transfer-panel__list.is-filterable{
+    overflow: hidden;
+  }
+
+  .el-checkbox__inner {
+    margin-right: 5px;
+  }
+
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner,.el-checkbox__input.is-checked .el-checkbox__inner{
+    background-color: $greenBg;
+    border-color: $greenBg;
+    margin-right: 5px;
+  }
+
+  .el-checkbox__input.is-checked+.el-checkbox__label{
+    color: $greenBg;
+  }
+
+  .el-transfer-panel__item.el-checkbox .el-checkbox__label{
+    font-size: 12px;
+  }
+
+  .el-transfer-panel .el-transfer-panel__header .el-checkbox .el-checkbox__label{
+    font-size: 13px;
+  }
+
+  .el-form{
+    .el-form-item__label{
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    .el-radio{
+      &:hover{
+        color: $greenBg;
+      }
+      .el-radio__input{
+        &:hover{
+          border-color: $greenBg;
+        }
+      }
+      .el-radio__label{
+        &:hover{
+          color: $greenBg;
+        }
+      }
+    }
+
+    .el-radio__input.is-checked{
+      .el-radio__inner{
+        background-color: $greenBg;
+        border-color: $greenBg;
+      }
+    }
+    .el-radio__input.is-checked+.el-radio__label{
+      color: $greenBg;
+    }
+  }
+
+  .el-select{
+    width: 100%;
+  }
+
+  .el-input__inner{
+    &:focus {
+      border-color: $darkGreen;
+    }
+  }
+
+  .app-container{
+    .operation {
+      margin-bottom: 10px;
+      .table-filter,.table-operating{
+        height: 40px;
+        line-height: 40px;
+      }
+      .table-filter {
+
+        .el-form-item {
+          margin-bottom: 0;
+        }
+
+      }
+
+      .table-operating {
+        text-align: right;
+      }
+
+    }
+
+    .el-table .el-table__header-wrapper thead tr th{
+      background-color: $greyBg;
+      color: $greyText;
+      border-bottom-color: $greyBd;
+    }
+
+    .pagination-container{
+      .el-pagination.is-background {
+        .el-pager li:not(.disabled){
+          &.active{
+            background-color: $darkGreen;
+          }
+        }
+      }
+    }
+
+    .page-form{
+      margin-top: 10px;
+      .el-card {
+        border: none;
+        .el-card__header {
+          height: 30px;
+          line-height: 1px;
+          font-size: 14px;
+          color: #515A6E;
+          border-bottom: 2px solid;
+          border-bottom-color: #E8EAEC;
+        }
+        .el-card__body{
+          .card__moudle{
+            border-radius: 4px;
+            &.border{
+              border: 1px solid #E8EAEC;
+              margin-top: 10px;
+              padding: 15px 10px;
+            }
+            &.el-row.hidden{
+              *{
+                height: 0;
+                visibility: hidden;
+              }
+            }
+          }
+          .card__tips{
+            font-size: 13px;
+            text-align: right;
+          }
+          fieldset{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            legend{
+              padding: 0 10px;
+              font-size: 14px;
+              line-height: inherit;
+              color: $darkGreen;
+              white-space: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

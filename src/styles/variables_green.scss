@@ -1,0 +1,79 @@
+// base
+$greenBg: #00C3C4;
+// 登录者的颜色设置
+$greenText: #ffffff;
+$greyBg: #F8F8F9;
+$greyText: #515A6E;
+$greyBd: #E8EAEC;
+$darkGreen: #00C3C4;
+$appMainBg: #f3f3f4;
+$glassBg: rgba(7,21,43,0.58);
+// $navbarBg: #f3f3f4;
+$navbarBg: #1a244c;
+$navbar-border-color: #fff;
+$navbar-unactive: #b9d4d4;
+$hamburger-container: white;
+
+// container
+$title-font-size: 14px;
+$title-color: #17233d;
+$title-font-weight: 700;
+$dialog-font-size: 15px;
+$main-container: url('~@/assets/bg.png');
+$main-container-card : white;
+$card-border-color: rgba(233,235,239,0.58);
+$main-container-card-header :black;
+$main-container-card-borderLeft:green;
+$el-loading-spinner:#00C3C4;
+
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#00C3C4;
+$subMenuActiveText:#f4f4f5; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg: rgb(48, 65, 86);
+$menuHover:#263445;
+
+$subMenuBg:#0A142A;
+$subMenuHover:#001528;
+
+$tags-view-container: #ffffff;
+
+$sideBarWidth: 210px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  greenBg: $greenBg;
+  greenText: $greenText;
+  greyBg:$greyBg;
+  greyText:$greyText;
+  greyBd:$greyBd;
+  darkGreen:$darkGreen;
+  appMainBg:$appMainBg;
+  glassBg: $glassBg;
+  dialog-font-size:$dialog-font-size;
+  title-font-size: $title-font-size;
+  title-color: $title-color;
+  title-font-weight: $title-font-weight;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  navbarBg: $navbarBg;
+  main-container: $main-container;
+  tags-view-container: $tags-view-container;
+  main-container-card: $main-container-card;
+  card-border-color: $card-border-color;
+  navbar-border-color: $navbar-border-color;
+  navbar-unactive: $navbar-unactive;
+  hamburger-container: $hamburger-container;
+  main-container-card-header:$main-container-card-header;
+  main-container-card-borderLeft:$main-container-card-borderLeft;
+  el-loading-spinner:$el-loading-spinner;
+  
+}

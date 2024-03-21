@@ -1,0 +1,13 @@
+.el-select-dropdown{
+  &.el-popper{
+    .el-select-dropdown__item{
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      &.selected{
+        color: $greenBg;
+        font-weight: 400;
+      }
+    }
+  }
+}
